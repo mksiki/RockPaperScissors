@@ -5,10 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RPS</title>
-    <script src="game.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.cdnfonts.com/css/supernova-2" rel="stylesheet">
 </head>
 <body>
-    
-    
+
+    <header style="display: flex; justify-content: center;">
+        <h1>
+            <Em>Rock Paper Scissors</Em>
+        </h1>
+    </header>
+
+    <main class="main">
+        <!-- The whole container to hold/keep track/update of the scores. -->
+        <div class="score-container">
+
+            <h2 id="scoreInfo">
+                Choose your weapon of choice!
+            </h2>
+
+            <h3 style="font-weight: bold; margin-bottom: 15px;" id="scoreAlert">First to 5 Wins!</h3>
+
+            <div class="score-board">
+                    <!-- Score contianer for player-->
+                <div class="scores">
+                    <div id="playerIcon" class="icon">❓</div>
+                    <p id="playerScore" class="score">Player: 0</p>
+                </div>
+
+                <!-- Score container for computer-->
+                <div class="scores">
+                    <div id="computerIcon" class="icon">❓</div>
+                    <p id="computerScore" class="score">Computer: 0</p>
+                </div>
+            </div>
+
+            <!-- Button for Rock, Paper, Scissors choices-->
+            <div class="choices-btns">
+                <button id="rockBtn" class="btn btn-square">
+                    <div class="icon">🪨</div>
+                </button>
+                <button id="paperBtn" class="btn btn-square">
+                    <div class="icon">📜</div>
+                </button>
+                <button id="scissorsBtn" class="btn btn-square">
+                    <div class="icon">✂️</div>
+                </button>
+            </div>
+            
+            
+        </div>
+        <script src="game.js"></script>
+
+
+    </main>
+
 </body>
 </html>
