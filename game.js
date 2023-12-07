@@ -18,7 +18,7 @@ function playRound(playerSelection, computerSelection) {
 
     if (player === computer) {
         scoreInfo.textContent = "It's a tie!";
-        scoreAlert.textContent = `${capitalizeFirstLetter(player)} can't beat itself! (${capitalizeFirstLetter(computer)}).`
+        scoreAlert.textContent = `${capitalizeFirstLetter(player)} can't beat itself! (${capitalizeFirstLetter(computer)})`
     } else if (
         (player === "rock" && computer === "scissors") ||
         (player === "paper" && computer === "rock") ||
@@ -105,9 +105,9 @@ function endGameResults () {
     computerScoreElement.textContent = `Computer: ${computerScore}`
     console.log(playerScoreElement.innerText, computerScoreElement.innerText)
     if (playerScore > computerScore) {
-        alert("You won")
+        alert("YOU WON!")
     } else {
-        alert("You lost")
+        alert("You Lost..")
     }
     scoreAlert.textContent = "Game Over!"
     showButton();

@@ -5,13 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RPS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nabla&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <header style="display: flex; justify-content: center;">
         <h1>
-            <Em>Rock Paper Scissors</Em>
+            <Em style="font-size: 80px;">Rock Paper Scissors</Em>
         </h1>
     </header>
 
@@ -54,13 +57,21 @@
             
             <button id="restartBtn" class="btn" style="font-size: 60px; visibility: hidden;">Play Again!</button>
             
-            
-            
-        </div>
         <script src="game.js"></script>
-
-
     </main>
+
+    <footer class="footer">
+        <p>
+          Copyright ©
+          <script>
+            document.write(new Date().getFullYear())
+          </script>
+          <em>Jesus Antonio</em>
+        </p>
+        <a href="https://github.com/mksiki" target="_blank" rel="noopener noreferrer">
+          <img src="github-11-xxl.png" class="fab fa-github" width="25px" height="25px"></img>
+        </a>
+    </footer>
 
 </body>
 </html>
