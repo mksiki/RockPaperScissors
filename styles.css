@@ -18,7 +18,7 @@ body {
     background: #050808;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
-    font-family: "Nabla";
+    font-family: "Nabla", sans-serif;
     font-palette: --Custom;
 }
 
